@@ -1,4 +1,4 @@
-package org.example.cartulinas.handler;
+package org.example.cartulinas.controllers;
 
 
 
@@ -7,7 +7,7 @@ import org.example.cartulinas.model.characters.Danielruizelrandom;
 
 import java.util.ArrayList;
 
-public class CharacterHandler {
+public class CharacterController {
 
     static ArrayList<Character> enemies = new ArrayList<>();
 

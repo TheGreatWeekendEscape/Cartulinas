@@ -35,6 +35,16 @@ public abstract class Character {
         return handValue;
     }
 
+    public int heal(int amount) {
+        if ((this.hp + amount) > this.maxHp) {
+            this.hp = this.maxHp;
+            return this.maxHp - amount;
+        } else {
+            this.hp += amount;
+            return amount;
+        }
+    }
+
     public Card getRandCard() {
         return this.deck.getRandCard();
     }

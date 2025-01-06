@@ -1,11 +1,10 @@
 package org.example.cartulinas;
 
 import javafx.application.Platform;
-import org.example.cartulinas.handler.CharacterHandler;
+import org.example.cartulinas.controllers.CharacterController;
 import org.example.cartulinas.model.Card;
 import org.example.cartulinas.model.characters.Character;
 import org.example.cartulinas.model.characters.Elcartero;
-import org.example.cartulinas.model.characters.Character;
 import org.example.cartulinas.uiController.CombatController;
 
 
@@ -30,7 +29,7 @@ public class Game {
         while (!end) {
             System.out.println("PISO " + floor);
 
-            boolean victory = fight(player, CharacterHandler.getEnemyFromFloor(floor));
+            boolean victory = fight(player, CharacterController.getEnemyFromFloor(floor));
 
             if (victory) {
                 System.out.println("Has ganado el combate");

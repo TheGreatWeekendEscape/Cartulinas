@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cartulinas.uiController.GameController">
+<VBox stylesheets="@images/generic.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cartulinas.uiController.GameController">
     <children>
         <HBox alignment="CENTER_LEFT" prefHeight="204.0" prefWidth="1920.0" spacing="100.0" style="-fx-background-color: #2b2b2b;">
             <children>
@@ -86,6 +86,6 @@
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </padding>
         </HBox>
-        <HBox prefHeight="1018.0" prefWidth="1920.0" style="-fx-background-image: url('../resources/org/example/cartulinas/images/shopBackground.jpg');" />
+        <HBox fx:id="shop" styleClass="shop" prefHeight="1018.0" prefWidth="1920.0"  />
     </children>
 </VBox>
